@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhammad Abdullah — Portfolio</title>
+  <meta name="description" content="Portfolio of Muhammad Abdullah, full-stack developer and BSSE student in Lahore. Projects, experience, skills and contact.">
+  <meta name="theme-color" content="#161513">
+  <meta property="og:title" content="Muhammad Abdullah — Portfolio">
+  <meta property="og:description" content="Full-stack developer in Lahore. Projects, experience, skills and contact.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23111'/%3E%3Ctext x='32' y='48' font-family='Impact,Arial Black,sans-serif' font-size='44' text-anchor='middle' fill='%23f1ebdd'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    document.documentElement.className = "js is-loading";
+    try { if (sessionStorage.getItem("seenLoader") === "1") document.documentElement.classList.add("skip-loader"); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#brief">Skip to content</a>
+
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-sky" data-scene="skyline" data-tint="night" data-ratio="banner" data-seed="4"></div>
+    <div class="loader-frames">
+      <figure class="lf lf-1 panel" data-scene="portrait" data-tint="dusk" data-ratio="tall" data-seed="2"></figure>
+      <figure class="lf lf-2 panel" data-scene="bridge" data-tint="harbor" data-seed="5"></figure>
+      <figure class="lf lf-3 panel" data-scene="statue" data-tint="park" data-seed="8"></figure>
+      <figure class="lf lf-4 panel" data-scene="train" data-tint="rust" data-seed="3"></figure>
+    </div>
+    <div class="loader-logo">
+      <span class="logo-pre">The portfolio of</span>
+      <span class="logo-name" data-bind="name">Abdullah</span>
+    </div>
+    <div class="loader-bar">
+      <p class="loader-tip"><b>Tip</b> <span id="loader-tip">Every panel on the cover is a door.</span></p>
+      <div class="loader-progress"><span></span></div>
+      <span class="loader-spin" aria-hidden="true"></span>
+    </div>
+    <span class="loader-skip">Click or press any key to skip</span>
+  </div>
+
+  <!-- ===================== PAUSE MENU (NAV) ===================== -->
+  <header class="menu" id="menu">
+    <div class="menu-inner">
+      <a class="menu-logo" href="#top" data-bind="name">Abdullah</a>
+      <nav class="menu-tabs" aria-label="Sections">
+        <a href="#brief">Brief</a>
+        <a href="#stats">Stats</a>
+        <a href="#missions">Missions</a>
+        <a href="#story">Story</a>
+        <a href="#phone">Phone</a>
+      </nav>
+      <div class="menu-docs">
+        <a class="menu-btn" href="resume.html">Resume</a>
+        <a class="menu-btn menu-btn-alt" href="cv.html">CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== COVER ===================== -->
+    <section class="cover-wrap" id="top" aria-label="Cover">
+      <div class="cover">
+        <div class="panel c-logo">
+          <h1 class="logo">
+            <span class="logo-pre">The portfolio of</span>
+            <span class="logo-name" data-bind="name">Abdullah</span>
+            <span class="logo-roles" id="logo-roles"></span>
+          </h1>
+          <p class="logo-tagline" data-bind="tagline"></p>
+          <div class="logo-cta">
+            <a class="btn" href="#missions">Start mission</a>
+            <a class="btn btn-ghost" href="assets/docs/resume.pdf" download data-bind-download="Resume">Download resume</a>
+          </div>
+        </div>
+        <a class="panel c-portrait" href="#brief" data-scene="portrait" data-tint="dusk" data-ratio="tall" data-seed="2">
+          <span class="cap"><i>01</i> Brief</span>
+        </a>
+        <a class="panel c-bridge" href="#missions" data-scene="bridge" data-tint="harbor" data-seed="5">
+          <span class="cap"><i>03</i> Missions</span>
+        </a>
+        <a class="panel c-tower" href="#stats" data-scene="tower" data-tint="rust" data-ratio="tall" data-seed="6">
+          <span class="cap"><i>02</i> Stats</span>
+        </a>
+        <a class="panel c-statue" href="#story" data-scene="statue" data-tint="park" data-seed="8">
+          <span class="cap"><i>04</i> Story</span>
+        </a>
+        <a class="panel c-train" href="#phone" data-scene="train" data-tint="night" data-seed="3">
+          <span class="cap"><i>05</i> Phone</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== 01 BRIEF ===================== -->
+    <section class="section section-paper" id="brief">
+      <div class="wrap brief">
+        <div class="brief-card reveal">
+          <div class="panel brief-art" data-scene="portrait" data-tint="mono" data-ratio="tall" data-seed="9"></div>
+          <span class="brief-name" data-bind="name">Abdullah</span>
+          <span class="brief-status" id="brief-status"></span>
+        </div>
+        <div class="brief-text">
+          <header class="sec-head reveal">
+            <span class="sec-num">01</span>
+            <h2 class="sec-title">Brief</h2>
+            <p class="sec-sub">Who's behind the wheel?</p>
+          </header>
+          <div class="brief-about reveal" id="brief-about"></div>
+          <dl class="dossier reveal" id="dossier"></dl>
+          <div class="brief-cta reveal">
+            <a class="btn btn-dark" href="resume.html">View resume</a>
+            <a class="btn" href="cv.html">View full CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 02 STATS ===================== -->
+    <section class="section section-dark" id="stats">
+      <div class="section-art" data-scene="tower" data-tint="rust" data-ratio="banner" data-seed="11"></div>
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="sec-num">02</span>
+          <h2 class="sec-title">Stats</h2>
+          <p class="sec-sub">Skills, levelled up.</p>
+        </header>
+        <div class="numbers reveal" id="numbers"></div>
+        <div class="stats-grid">
+          <div class="menu-box reveal">
+            <h3 class="menu-box-title">Player stats</h3>
+            <ul class="bars" id="bars"></ul>
+          </div>
+          <div class="menu-box reveal">
+            <h3 class="menu-box-title">Arsenal</h3>
+            <div class="arsenal" id="arsenal"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 03 MISSIONS ===================== -->
+    <section class="section section-paper" id="missions">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="sec-num">03</span>
+          <h2 class="sec-title">Missions</h2>
+          <p class="sec-sub">Selected projects. Open one for the full briefing.</p>
+        </header>
+        <div class="missions" id="mission-list"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 04 STORY ===================== -->
+    <section class="section section-dark section-story" id="story">
+      <div class="section-art" data-scene="skyline" data-tint="park" data-ratio="square" data-seed="12"></div>
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="sec-num">04</span>
+          <h2 class="sec-title">The story so far</h2>
+          <p class="sec-sub">Experience, education and the bits in between.</p>
+        </header>
+        <ol class="story" id="story-list"></ol>
+        <div class="menu-box achievements reveal">
+          <h3 class="menu-box-title">Achievements unlocked</h3>
+          <ul class="achievement-list" id="achievements"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 05 PHONE ===================== -->
+    <section class="section section-night" id="phone">
+      <div class="section-art" data-scene="skyline" data-tint="night" data-ratio="banner" data-seed="13"></div>
+      <div class="wrap phone-wrap">
+        <div class="phone-copy">
+          <header class="sec-head reveal">
+            <span class="sec-num">05</span>
+            <h2 class="sec-title">Give me a call</h2>
+            <p class="sec-sub">Got a job that needs doing? My phone's always on.</p>
+          </header>
+          <ul class="contact-list reveal" id="contact-list"></ul>
+        </div>
+
+        <div class="phone reveal" id="phone-device">
+          <div class="phone-top"><span class="phone-speaker"></span></div>
+          <div class="phone-screen" tabindex="0" aria-label="Phone contacts. Use the arrow keys to choose and Enter to call.">
+            <div class="phone-status">
+              <span class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+              <span class="phone-clock" id="phone-clock">12:00</span>
+              <span class="battery" aria-hidden="true"><i></i></span>
+            </div>
+            <div class="phone-title" id="phone-title">Contacts</div>
+            <ul class="phone-list" id="phone-list" role="listbox" aria-label="Contacts"></ul>
+            <div class="phone-calling" id="phone-calling" aria-live="polite"></div>
+            <div class="phone-soft"><span>Select</span><span>Back</span></div>
+          </div>
+          <div class="phone-keys" aria-hidden="true">
+            <button class="pk pk-soft" tabindex="-1" data-key="ok"></button>
+            <div class="dpad">
+              <button tabindex="-1" class="dp dp-up" data-key="up"></button>
+              <button tabindex="-1" class="dp dp-left" data-key="up"></button>
+              <button tabindex="-1" class="dp dp-ok" data-key="ok"></button>
+              <button tabindex="-1" class="dp dp-right" data-key="down"></button>
+              <button tabindex="-1" class="dp dp-down" data-key="down"></button>
+            </div>
+            <button class="pk pk-soft" tabindex="-1" data-key="back"></button>
+            <div class="numpad">
+              <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+              <span>7</span><span>8</span><span>9</span><span>*</span><span>0</span><span>#</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-art" data-scene="skyline" data-tint="dusk" data-ratio="banner" data-seed="14"></div>
+    <div class="wrap footer-inner">
+      <p class="footer-big">Mission passed</p>
+      <p class="footer-line">© <span id="year"></span> <span data-bind="fullName">Abdullah</span>. Built with plain HTML, CSS and JavaScript.</p>
+      <p class="footer-note">Art direction inspired by classic open-world game loading screens. All artwork is original and generated in code. Not affiliated with or endorsed by Rockstar Games or Take-Two Interactive.</p>
+      <a class="btn btn-ghost" href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <!-- ===================== MISSION BRIEFING ===================== -->
+  <dialog class="briefing" id="briefing" aria-labelledby="briefing-title">
+    <div class="briefing-art panel" id="briefing-art"></div>
+    <div class="briefing-body">
+      <p class="briefing-meta" id="briefing-meta"></p>
+      <h3 class="briefing-title" id="briefing-title"></h3>
+      <p class="briefing-real" id="briefing-real"></p>
+      <p class="briefing-desc" id="briefing-desc"></p>
+      <ul class="briefing-list" id="briefing-list"></ul>
+      <ul class="tags" id="briefing-tags"></ul>
+      <div class="briefing-links" id="briefing-links"></div>
+    </div>
+    <button class="briefing-close" id="briefing-close" aria-label="Close briefing">✕</button>
+  </dialog>
+
+  <noscript><p class="noscript">This portfolio needs JavaScript to draw its artwork. The <a href="resume.html">resume</a> and <a href="cv.html">CV</a> are also available.</p></noscript>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/scenes.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
